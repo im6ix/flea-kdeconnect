@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.im6ix.flea-kdeconnect",
+  "name": "KDE Connect",
+  "version": "0.3.0",
+  "author": "im6ix",
+  "license": "MIT",
+  "description": "Browse paired phones from the Flea rail and send files to them with KDE Connect.",
+  "kinds": ["menu-action", "rail-section"],
+  "menuActions": [
+    {
+      "id": "send-to-phone",
+      "label": "Send to phone",
+      "glyph": "smartphone",
+      "menus": ["file"],
+      "when": {"minItems": 1, "maxItems": 512, "folders": true}
+    }
+  ],
+  "railSection": {"title": "KDE CONNECT", "refreshSec": 15},
+  "access": ["selection", "network", "exec:kdeconnect-cli", "exec:busctl"],
+  "entryPoints": {"run": "plugin.py"}
+}
