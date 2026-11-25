@@ -17,6 +17,8 @@ Dolphin-style phone integration, for people who switched to Flea.
 - **Self-healing.** The share is re-mounted on every refresh, so it recovers
   from idle timeouts and reconnects on its own.
 
+![Flea's file menu showing Send to phone](docs/send-to-phone-menu.png)
+
 ## Requirements
 
 - Flea 0.4.x
